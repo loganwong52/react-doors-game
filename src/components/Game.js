@@ -1,7 +1,8 @@
 import React from 'react'
-// import { useState } from "react"
 import Door from "./Door"
 import { Component } from 'react'
+// Function-based component version
+// import { useState } from "react"
 // import { render } from '@testing-library/react'
 
 // function Game(props) {
@@ -63,7 +64,7 @@ import { Component } from 'react'
 // }
 
 ///////////////////////////////////////////////
-
+// Class-based component version
 class Game extends Component {
   // states
   state = {

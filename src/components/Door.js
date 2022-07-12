@@ -3,7 +3,7 @@ import React from 'react'
 import GiftImage from "../images/gift.png"
 import { Component } from "react" // we need to import Component
 
-
+// Function-based component version
 // function Door(props) {
 //   // states
 //   const [opened, setOpened] = useState(false)
@@ -37,12 +37,15 @@ import { Component } from "react" // we need to import Component
 
 
 ////////////////////////////////////////////////
+// Class-based component version
 class Door extends Component {
+  // states
   state = {
     opened: false
   }
 
 
+  // Changes the opened state value to the opposite of what it is
   toggleDoor = () => {
     let newOpenedState = !this.state.opened
     this.setState({ opened: newOpenedState })
@@ -54,6 +57,7 @@ class Door extends Component {
     return " " + (this.state.opened ? "door-opened" : "door-closed")
   }
 
+  // Renders the prize box image in the door if it's the prizedoor, otherwise, nothing
   renderImage = () => {
     return this.state.opened && this.props.isPrizeDoor
       ? <img id="image-prize" src={GiftImage} alt="prize" />

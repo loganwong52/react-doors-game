@@ -3,6 +3,7 @@ import './App.css';
 import Game from "./components/Game"
 import { Component } from 'react'
 
+// Function based component version
 // function App() {
 //   return (
 //     <div className="App">
@@ -11,9 +12,11 @@ import { Component } from 'react'
 //   );
 // }
 
+
+// Class-based component version
 class App extends Component {
 
-  //render
+  //render the Game
   render() {
     return (
       <div className="App">
